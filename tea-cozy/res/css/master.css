@@ -1,0 +1,181 @@
+/* >>--== Base */
+html,
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: .9;
+    margin: 0;
+}
+/* >>--== Header */
+.header {
+    position: fixed;
+    width: 100%;
+    max-height: 69px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    z-index: 5;
+}
+.header .logo {
+    margin-left: 10px;
+    width: 50%;
+    flex-grow: 1;
+}
+.header .logo .logo__img {
+    max-height: 50px;
+}
+.header .menu {
+    position: relative;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    right: 10px;
+}
+.header .menu .menu__list {
+    list-style: none;
+    font-size: .8em;
+}
+.header .menu .menu__list > .menu__list-item {
+    display: inline-block;
+    margin: 0 .5em;
+}
+.header .menu .menu__list > .menu__list-item .menu__link {
+    color: inherit;
+    text-decoration: underline;
+}
+/* >>--== Container */
+.content-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+
+    top: 70px;
+    padding: 0 1em;
+
+    text-align: center;
+}
+/* >>--== Mission */
+.mission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+
+    height: 700px;
+    max-width: 1200px;
+    width: 100%;
+
+    background-image: url('../img/img-mission-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.mission .mission__info {
+    padding: 0 1em;
+    background-color: black;
+    width: 100%;
+}
+.mission .mission__info .mission__heading {
+    margin-bottom: .5em;
+}
+.mission .mission__info .mission__description {
+    margin-top: .5em;
+}
+/* >>--== Featured Tea */
+.featured {
+    max-width: 1000px;
+    width: 100%;
+}
+.featured .featured__catalog {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    max-width: 100%;
+}
+.featured .featured__catalog .featured__item {
+    margin: 10px;
+}
+.featured .featured__catalog .featured__item .featured__name {
+    margin: 10px;
+}
+.featured .featured__catalog .featured__item .featured__img {
+    max-width: 300px;
+}
+/* >>--== Locations */
+.locations {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 500px;
+    min-width: 300px;
+    max-width: 1200px;
+    width: 100%;
+
+    background-image: url('../img/img-locations-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.locations .locations__heading {
+    margin-bottom: 0;
+}
+.locations .locations__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.locations .locations__list .locations__list-item {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    max-width: 300px;
+    width: 100%;
+    min-height: 300px;
+    margin: 15px 20px;
+    background-color: black;
+}
+.locations .locations__list .locations__list-item .locations__place {
+    margin-bottom: 0;
+}
+/* >>--== Footer */
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    min-height: 200px;
+    max-width: 1200px;
+    width: 100%;
+
+    top: 70px;
+    margin: 0 auto;
+}
+.footer .contact {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.footer .contact .contact__email,
+.footer .contact .contact__phone {
+    margin: 10px;
+}
+.footer .copyright {
+    margin-right: auto;
+    padding-left: 20px;
+    font-size: .7em;
+}
+
+@media screen and (min-width: 800px) {
+    .header .menu .menu__list {
+        font-size: 1em;
+    }
+}
